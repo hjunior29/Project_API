@@ -16,6 +16,5 @@ def index():
     jwt.decode(encoded_jwt, "secret", algorithms=["HS256"])
     if login == login_pass and password == password_pass:
         return jsonify({'token': encoded_jwt})
-
 if __name__ == "__main__":
     app.run()
