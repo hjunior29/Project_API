@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     if request.method == 'GET':
         # importando arquivo html
-        return render_template("index.html")
+        return render_template("index_2.html")
     else:
         # pegando login e senha do formulário
         login = request.form.get("login")
